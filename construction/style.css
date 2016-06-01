@@ -17,13 +17,13 @@ h1 {
 	margin: 0;
 	color: white;
 	position: absolute;
-	height: 87px;
+	height: 138px;
 	left: 50%;
 	right: 50%;
 	top: 50%;
-	width: 500px;
-	margin: -43px 0 0 -250px;
-	font-size: 55px;
+	width: 700px;
+	margin: -69px 0 0 -350px;
+	font-size: 85px;
 }
 
 .container {
@@ -44,7 +44,7 @@ h1 {
 }
 
 .smaller {
-	font-size: 15px;
+	font-size: 25px;
 }
 
 .blue {
