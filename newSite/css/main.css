@@ -1,0 +1,169 @@
+
+@font-face {
+	font-family: "Nexa Bold";
+	src: url('../fonts/NexaBold.otf');
+}
+
+@font-face {
+	font-family: "Nexa Light";
+	src: url('../fonts/NexaLight.otf');
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: url('../textures/cover1.png');
+}
+
+header {
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	font-family: "Nexa Light", "Arial", sans-serif, serif;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+.blue {
+	color: #40bdf4 !important;
+}
+
+header .grid, header .row div {
+	padding: 0;
+	height: 50px;
+}
+
+.logo {
+	font-family: "Nexa Bold";
+	font-size: 1.5em;
+}
+
+.nav {
+	text-align: right;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	height: 50px;
+}
+
+.nav ul li {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	width: auto;
+	margin: 0 0 0 6%;
+}
+
+.cover {
+	height: 100vh;
+	width: 100%;
+}
+
+#cov-1 {
+	
+}
+
+.cov-blue {
+	background-color: rgba(64, 189, 244, 0.5);
+}
+
+.welcome {
+	font-family: "Nexa Bold";
+	font-size: 2vw;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+	color: white;
+	width: 30%;
+	line-height: 2.5vw;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	min-font-size: 1em;
+}
+
+.arrow-b {
+	height: 70px;
+	width: 70px;
+	background: url('../images/arrow.png') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	margin: 0 auto 0 auto;
+
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
+}
+
+.arrow {
+	height: 70px;
+	width: 70px;
+	background: url('../images/arrowwhite.png') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	margin: 0 auto 0 auto;
+	
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
+}
+
+.arrow {
+	height: 70px;
+	width: 70px;
+	background: url('../images/arrowwhite.png') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	margin: 0 auto 0 auto;
+	
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
+}
+
+.arrowu {
+	height: 70px;
+	width: 70px;
+	background: url('../images/arrow.png') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	margin: 0 auto 0 auto;
+	
+	left: 50%;
+	-webkit-transform: translateX(-50%) rotate(180deg);
+  	-ms-transform: translateX(-50%) rotate(180deg);
+  	transform: translateX(-50%) rotate(180deg);
+}
+
+#cov-1 .arrow-b {
+	top: 85vh;
+}
+
+#cov-2 .arrow {
+	top: 185vh;
+}
+
+#cov-3 .arrowu {
+	top: 285vh;
+}
+
+a {
+	color: inherit;
+}
+
+@media screen and (max-width: 1023px) {
+    .welcome {
+    	font-size: 2em;
+    	line-height: 1.2em;
+    	width: 95%;
+    	margin: 0 auto 0 auto;
+    }
+}
