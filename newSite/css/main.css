@@ -13,6 +13,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	background: url('../textures/cover1.png');
+	font-family: "Nexa Light", "Arial", sans-serif, serif;
 }
 
 header {
@@ -73,7 +74,7 @@ header .grid, header .row div {
 
 .welcome {
 	font-family: "Nexa Bold";
-	font-size: 2vw;
+	font-size: 2em;
 	position: relative;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -81,7 +82,7 @@ header .grid, header .row div {
   	transform: translateY(-50%);
 	color: white;
 	width: 30%;
-	line-height: 2.5vw;
+	line-height: 1.5em;
 	margin: 0 auto 0 auto;
 	text-align: center;
 	min-font-size: 1em;
@@ -159,11 +160,93 @@ a {
 	color: inherit;
 }
 
+.workGrid {
+	height: 50%;
+	width: 50%;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+  	margin: 0 auto 0 auto;
+  	font-size: 0;
+  	color: white;
+}
+
+.rowGrid {
+	width: 100%;
+	height: calc(100%/2);
+	margin: 0 0 2px 0;
+}
+
+.work {
+	height: 100%;
+	width: calc(50% - 2px);
+	background-color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	margin: 0 2px 0 0;
+	padding: 0;
+	text-align: center;
+	
+}
+
+.work span {
+	font-size: 22px;
+	padding: 0;
+	margin: 0 auto 0 auto;
+	position: relative;
+	display: inline-block;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+.workText {
+	padding: 0;
+	margin: 0;
+}
+
+.work:hover {
+	background-color: rgba(64, 189, 244, 0.5);
+	font-family: "Nexa Bold";
+}
+
+.contactBlock {
+	height: auto;
+	display: block;
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	top: 50%;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+  	color: white;
+  	font-size: 1.5em;
+
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.bluebold {
+	font-family: "Nexa Bold";
+	color: rgba(64, 189, 244, 1);
+}
+
 @media screen and (max-width: 1023px) {
     .welcome {
     	font-size: 2em;
     	line-height: 1.2em;
     	width: 95%;
     	margin: 0 auto 0 auto;
+    }
+
+    .workGrid {
+    	width: 90%;
+    	height: 100%;
     }
 }
