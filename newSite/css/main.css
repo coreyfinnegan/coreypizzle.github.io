@@ -39,6 +39,8 @@ header .grid, header .row div {
 .logo {
 	font-family: "Nexa Bold";
 	font-size: 1.5em;
+	float: left;
+	display: inline-block;
 }
 
 .nav {
@@ -177,6 +179,7 @@ a {
 	width: 100%;
 	height: calc(100%/2);
 	margin: 0 0 2px 0;
+	overflow: hidden;
 }
 
 .work {
@@ -247,6 +250,25 @@ a:hover {
 
     .workGrid {
     	width: 90%;
-    	height: 100%;
+    	height: 80%;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+    	display: none;
+    }
+
+    .logo {
+    	left: 50%;
+    	-webkit-transform: translateX(-50%);
+  		-ms-transform: translateX(-50%);
+  		transform: translateX(-50%);
+  		position: relative;
+    }
+
+    .contactBlock {
+    	font-size: 1em;
+    }
+
 }
