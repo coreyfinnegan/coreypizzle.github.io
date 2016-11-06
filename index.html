@@ -1,25 +1,95 @@
+<!DOCTYPE html>
 <html>
-	<head>
-			<title>COREYPURDY | Designer | Developer</title>
-		  <link rel="stylesheet" type="text/css" href="construction/style.css">
-		  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-		  <script src="scripts/jquery.scroll_to.js" type="text/javascript"></script>
-		  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-		  		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<head>
+	<title>COREY PURDY | Designer | Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/siimple.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  	<script src="scripts/jquery.scroll_to.js" type="text/javascript"></script>
+</head>
+<body>
 
-  ga('create', 'UA-85607072-1', 'auto');
-  ga('send', 'pageview');
+	<header>
+		<div class="grid">
+			<div class="row">
 
-</script>
-	</head>
-	<body>
-		<div class="container">
-			<h1 class="const"><span class="white">COREY</span><span class="blue">PURDY.COM</span></br><span class="smaller">IS UNDER CONSTRUCTION</span></h1>
+				<div class="logo">
+					COREY<span class="blue">PURDY</span>
+				</div>
+
+				<div class="nav">
+					<ul>
+						<a href="#cov-1" class="scroll"><li>Home</li></a>
+						<a href="#cov-2" class="scroll"><li>Work</li></a>
+						<a href="#cov-3" class="scroll"><li>Contact</li></a>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<div class="cover" id="cov-1">
+		<div class="welcome">
+
+			Hi, I'm Corey Purdy and I'm a web <span class="blue">designer</span> and <span class="blue">developer</span>.
+
 		</div>
 
-	</body>
+		<a href="#cov-2" class="scroll"><div class="arrow-b"></div></a>
+
+	</div>
+
+	<div class="cover cov-blue" id="cov-2">
+		<div class="workGrid">
+			<div class="rowGrid">
+				<a href="http://www.mcgoveranscentra.co.uk" target="_blank"><div class="work" id="centra"><span>Centra</span></div></a>
+				<a href="images/aventura.jpg" target="_blank"><div class="work" id="aventura"><span>Aventura (Mockup)</span></div></a>
+			</div>
+			<div class="rowGrid">
+				<a href="images/mockupRota.jpg" target="_blank"><div class="work" id="centra"><span>Rota Program (Mockup / Actual Site Private)</span></div></a>
+				<a href="images/adlookr.jpg" target="_blank"><div class="work" id="aventura"><span>AdLookr (Mockup - Previously Owned Site)</span></div></a>
+			</div>
+			<!--<div class="rowGrid">
+				<div class="work" id="centra"><span>?</span></div>
+				<div class="work" id="aventura"><span>?</span></div>
+				<div class="work" id="none"><span>?</span></div>
+			</div>-->
+		</div>
+		<a href="#cov-3" class="scroll"><div class="arrow"></div></a>
+	</div>
+
+	<div class="cover" id="cov-3">
+		<div class="contactBlock">
+		Interested in my work? Need a website for yourself or your business?</br>
+		You can contact me</br></br>
+
+		On Twitter : </br><a href="http://www.twitter.com/coreypizzle" target="_blank"><span class="bluebold">@coreypizzle</span></a></br>
+		Or by Email : </br><span class="bluebold">cpurdy.dev@gmail.com</span>
+		</div>
+		<a href="#cov-1" class="scroll"><div class="arrowu"></div></a>
+	</div>
+
+	<script type="text/javascript">
+	    var hashTagActive = "";
+	    $(".scroll").click(function (event) {
+	        //if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+	            event.preventDefault();
+	            //calculate destination place
+	            var dest = 0;
+	            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+	                dest = $(document).height() - $(window).height();
+	            } else {
+	                dest = $(this.hash).offset().top;
+	            }
+	            //go to destination
+	            $('html,body').animate({
+	                scrollTop: dest
+	            }, 1000, 'swing');
+	            hashTagActive = this.hash;
+	       // }
+	    });
+	</script>
+</body>
 </html>
