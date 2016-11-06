@@ -177,7 +177,7 @@ a {
 
 .rowGrid {
 	width: 100%;
-	height: calc(100%/2);
+	height: 50%;
 	margin: 0 0 2px 0;
 	overflow: hidden;
 }
@@ -190,15 +190,16 @@ a {
 	margin: 0 2px 0 0;
 	padding: 0;
 	text-align: center;
+	position: relative;
 	
 }
 
 .work span {
-	font-size: 22px;
-	padding: 0;
+	font-size: 18px;
+	padding: 0 15px;
 	margin: 0 auto 0 auto;
 	position: relative;
-	display: inline-block;
+	display: inline-flex;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
   	-ms-transform: translateY(-50%);
@@ -250,7 +251,7 @@ a:hover {
 
     .workGrid {
     	width: 90%;
-    	height: 80%;
+    	height: 60%;
     }
 }
 
@@ -268,7 +269,11 @@ a:hover {
     }
 
     .contactBlock {
-    	font-size: 1em;
+    	font-size: 1.2em;
+    	width: 66%;
+    	text-align: left;
     }
+
+
 
 }
